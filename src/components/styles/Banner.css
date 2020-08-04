@@ -1,0 +1,26 @@
+.banner {
+  color: #fff;
+  object-fit: contain;
+  height: 11.25rem;
+}
+
+.banner__content {
+  margin-left: 1.875rem;
+  padding-top: 50px;
+}
+
+.banner__title {
+  font-size: 43.2px;
+  font-weight: 800;
+  padding-bottom: 4.8px;
+}
+
+.banner__fadeBottom {
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}

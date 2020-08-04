@@ -6,6 +6,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 1.25rem;
+  margin-right: 1.25rem;
 }
 .row__posters::-webkit-scrollbar {
   display: none;
