@@ -1,18 +1,23 @@
 import React from "react";
 import "./App.css";
-import Row from "./components/Row";
-import requests from "./requests";
-import Banner from "./components/Banner";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Detail from "./pages/Detail";
 
 function App() {
   return (
-    <div className="app">
-      <Banner appTitle="JLGR Movies" />
-      <Row title="Popular Movies" fetchUrl={requests.fetchPopularMovies} />
-      <Row title="Popular Series" fetchUrl={requests.fetchPopularSeries} />
-      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-    </div>
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route exact path="/detail">
+            <Detail />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

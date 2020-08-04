@@ -13,9 +13,8 @@
 }
 .row__film {
   border-radius: 0.25rem;
-  width: 100%;
   object-fit: contain;
-  max-height: 8.8125rem;
+  max-height: 8.9125rem;
   transition: transform 450ms;
   margin-right: 0.625rem;
 }
