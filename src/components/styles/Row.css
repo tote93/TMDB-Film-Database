@@ -1,0 +1,32 @@
+.row {
+  margin-left: 1.25rem;
+}
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 1.25rem;
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.row__film {
+  border-radius: 0.25rem;
+  width: 100%;
+  object-fit: contain;
+  max-height: 8.8125rem;
+  transition: transform 450ms;
+  margin-right: 0.625rem;
+}
+
+.row__film:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.row__title {
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}

@@ -8,7 +8,7 @@ For this purpose you have to use The Movie Data Base API.
 
 - [x] Get the TMDB Api Key (10 mins)
 - [x] Create React App and configure initial react-state (15 mins)
-- [ ] Get All movies & build the rows
+- [x] Get All movies & build the rows (30-45 mins)
 - [ ] Build the banner of the app
 - [ ] Build the detail page
 - [ ] Set the trailer video player
