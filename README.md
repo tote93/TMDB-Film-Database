@@ -10,7 +10,7 @@ For this purpose you have to use The Movie Data Base API.
 - [x] Create React App and configure initial react-state (15 mins)
 - [x] Get All movies & build the rows (30-45 mins)
 - [x] Build the banner of the app (15 mins)
-- [ ] Build the detail page
+- [x] Build the detail page (45 mins)
 - [ ] Set the trailer video player
 - [ ] Optional Tasks:
   - [ ] Make the app responsive
