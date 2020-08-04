@@ -1,19 +1,21 @@
 # 24i React Assignment
 
-Create a web application for browsing the popular movies, display a short detail page of a selected movie and play a short movie trailer. Please, also make sure to log the hours spent on creating the project and report them back to us together with your results.
+Create a web application for browsing the popular movies, display a short detail page of a selected movie and play a short movie trailer.
+Please, also make sure to log the hours spent on creating the project and report them back to us together with your results.
 For this purpose you have to use The Movie Data Base API.
 
 # Steps to do
-- [ ] Get the TMDB Api Key
-- [ ] Create React App + create App on Firebase
+
+- [x] Get the TMDB Api Key (10 mins)
+- [x] Create React App and configure initial react-state (15 mins)
 - [ ] Get All movies & build the rows
 - [ ] Build the banner of the app
 - [ ] Build the detail page
 - [ ] Set the trailer video player
 - [ ] Optional Tasks:
-    - [ ] Make the app responsive
-    - [ ] Implement Search Funcionality
-    - [ ] Create at least one unit test
+  - [ ] Make the app responsive
+  - [ ] Implement Search Funcionality
+  - [ ] Create at least one unit test
 
 # General information
 
