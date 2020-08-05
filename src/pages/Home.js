@@ -6,7 +6,7 @@ import Banner from "../components/Banner";
 function Home() {
   return (
     <>
-      <Banner appTitle="JLGR Movies" />
+      <Banner appTitle="My Movies" />
       <Row title="Popular Movies" fetchUrl={requests.fetchPopularMovies} />
       <Row title="Popular Series" fetchUrl={requests.fetchPopularSeries} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />

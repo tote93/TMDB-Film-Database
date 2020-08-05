@@ -64,7 +64,6 @@ function VideoPlayer({ cssClassName, poster, playVideo }) {
           } else if (video.msRequestFullscreen) {
             video.msRequestFullscreen();
           }
-          video.play();
         })
         .catch(onError); // onError is executed if the asynchronous load fails.
     }
