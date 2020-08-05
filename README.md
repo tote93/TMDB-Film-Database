@@ -11,7 +11,8 @@ For this purpose you have to use The Movie Data Base API.
 - [x] Get All movies & build the rows (30-45 mins)
 - [x] Build the banner of the app (15 mins)
 - [x] Build the detail page (45 mins)
-- [ ] Set the trailer video player
+- [x] Investigate how Shaka Video Player works, and tests (around 3 hours)
+- [x] Set the trailer video player (30 - 45 mins)
 - [ ] Optional Tasks:
   - [ ] Make the app responsive
   - [ ] Implement Search Funcionality
