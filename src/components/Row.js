@@ -8,8 +8,8 @@ const baseUrl = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl }) {
   const [movies, setMovies] = useState([]);
-  const [_, dispatch] = useStateValue();
-  // Use useEffect hook, when every time [fecthUrl] changes, will execute this hook
+  const [{}, dispatch] = useStateValue();
+  // Use useEffect hook to get an async promise from axios
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(fetchUrl);
@@ -17,14 +17,15 @@ function Row({ title, fetchUrl }) {
       return request;
     }
     fetchData();
-  }, [fetchUrl]);
-
+  }, []);
+  // Control the click event when select a film
   const handleClick = (e) => {
     const movieSelected = movies.filter((film) => {
       return (
         (film?.name || film?.title || film?.original_title) === e.target.alt
       );
     });
+    // Dispatch the event to the global state
     dispatch({
       type: "SET__DETAIL_MOVIE",
       movie: movieSelected[0],

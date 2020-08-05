@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  transition: ease-in-out 0.5s;
+  height: 80px;
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+  flex-wrap: wrap;
+}
+
+.nav__search,
+.nav__home {
+  position: fixed;
+  transition: 0.5s;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav__search {
+  right: 20px;
+}
+
+.nav__home {
+  left: 20px;
+}
+.nav__search:hover,
+.nav__home:hover {
+  cursor: pointer;
+}
+
+.stickyNav {
+  background: #111;
+  transition: ease-in-out 0.5s;
+  height: 70px;
+}

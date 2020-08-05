@@ -4,6 +4,26 @@ Create a web application for browsing the popular movies, display a short detail
 Please, also make sure to log the hours spent on creating the project and report them back to us together with your results.
 For this purpose you have to use The Movie Data Base API.
 
+# DEMO TEST
+
+It is possible to see a running demo test in the next link:
+https://joseluis-tmdb-24i.web.app
+
+# Features
+
+- [x] Allow search pressing Enter
+- [x] Dont allow special characters in input search
+- [x] Folder scaffolding
+- [x] Splitted into components and pages
+- [x] Axios used as HTTP client to manage promises
+- [x] Checked responsivity in many devices
+- [x] Manage errors during promises and detail page
+
+# Things to check
+
+- [x] The hls video is played with no problems in safari/mozilla web-browsers
+- [ ] In Chrome there is a problem with CORSS
+
 # Steps to do
 
 - [x] Get the TMDB Api Key (10 mins)
@@ -14,8 +34,8 @@ For this purpose you have to use The Movie Data Base API.
 - [x] Investigate how Shaka Video Player works, and tests (around 3 hours)
 - [x] Set the trailer video player (30 - 45 mins)
 - [ ] Optional Tasks:
-  - [ ] Make the app responsive
-  - [ ] Implement Search Funcionality
+  - [x] Make the app responsive
+  - [x] Implement Search Funcionality
   - [ ] Create at least one unit test
 
 # General information
