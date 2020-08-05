@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { useStateValue } from "../StateProvider";
 import "./styles/Detail.css";
+import VideoPlayer from "../components/VideoPlayer";
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
 function Detail() {
   const [{ movieSelected }] = useStateValue();
+  const [playVideo, setPlayVideo] = useState(false);
+
   // Truncate the description to n number of characters adding "..." at the end
   function truncate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
@@ -44,11 +47,16 @@ function Detail() {
                 </span>
               </li>
             </ul>
-          </div>{" "}
-          <button className="detail__playButton">Play</button>
+          </div>
+          <button
+            onClick={() => setPlayVideo(!playVideo)}
+            className="detail__playButton"
+          >
+            Play
+          </button>
         </div>
         <div className="detail__poster">
-          <img
+          {/*           <img
             src={`${baseUrl}${movieSelected?.poster_path}`}
             alt={
               movieSelected?.name ||
@@ -56,6 +64,11 @@ function Detail() {
               movieSelected?.original_title
             }
             className="detail__imagePoster"
+          /> */}
+          <VideoPlayer
+            playVideo={playVideo}
+            poster={`${baseUrl}${movieSelected?.poster_path}`}
+            cssClassName="detail__imagePoster"
           />
         </div>
       </div>
