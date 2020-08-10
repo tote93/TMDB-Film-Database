@@ -11,10 +11,10 @@ function Search() {
 
   // Control the main events (click, and press Enter Key) to search
   const handleClick = () => {
-    setSearchStatus(true);
+    if (querySearch) setSearchStatus(true);
   };
   const handleKeyPress = (e) => {
-    if (e.key === "Enter") setSearchStatus(true);
+    if (e.key === "Enter" && querySearch) setSearchStatus(true);
   };
 
   return (

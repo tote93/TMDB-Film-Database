@@ -7,7 +7,7 @@ function SearchNav() {
   // Control the scroll of the page
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 0) {
         setSticky(true);
       } else setSticky(false);
     });

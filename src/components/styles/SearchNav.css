@@ -3,11 +3,11 @@
   position: fixed;
   width: 100%;
   justify-content: space-between;
-  transition: ease-in-out 0.5s;
+
   height: 80px;
   padding: 20px;
   border-bottom: 1px solid #fff;
-  flex-wrap: wrap;
+  z-index: 1000;
 }
 
 .nav__search,
@@ -30,13 +30,13 @@
 .nav__home {
   left: 20px;
 }
-.nav__search:hover,
-.nav__home:hover {
+
+.nav__search:hover {
   cursor: pointer;
 }
 
 .stickyNav {
   background: #111;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.2s;
   height: 70px;
 }

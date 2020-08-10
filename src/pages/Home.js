@@ -9,7 +9,7 @@ function Home() {
       <Banner appTitle="My Movies" />
       <Row title="Popular Movies" fetchUrl={requests.fetchPopularMovies} />
       <Row title="Popular Series" fetchUrl={requests.fetchPopularSeries} />
-      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+      <Row title="Family" fetchUrl={requests.fetchFamily} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </>
   );

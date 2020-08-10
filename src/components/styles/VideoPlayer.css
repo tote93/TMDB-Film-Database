@@ -1,4 +1,13 @@
+.shaka-video-container {
+  width: 30rem;
+  margin: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
 .shaka-video {
   width: 100%;
   height: 100%;
+  margin: auto;
+  border-radius: 5px;
 }

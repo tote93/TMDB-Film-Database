@@ -17,7 +17,7 @@ function Row({ title, fetchUrl }) {
       return request;
     }
     fetchData();
-  }, []);
+  }, [fetchUrl]);
   // Control the click event when select a film
   const handleClick = (e) => {
     const movieSelected = movies.filter((film) => {
