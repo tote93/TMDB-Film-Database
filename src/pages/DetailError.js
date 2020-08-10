@@ -1,5 +1,5 @@
 import React from "react";
-
+/* Just in case someone introduce the url /detail */
 function DetailError() {
   return (
     <div className="detail">

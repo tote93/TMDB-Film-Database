@@ -5,6 +5,7 @@ import ListDetail from "../components/ListDetail";
 
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
+/* Success details of the films */
 function DetailSucess() {
   const [{ movieSelected }] = useStateValue();
   // playVideo determines when the user has pressed the play button

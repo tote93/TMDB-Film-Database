@@ -3,9 +3,12 @@ import axios from "../axios";
 import "./styles/Row.css";
 import { useStateValue } from "../StateProvider";
 import { Link } from "react-router-dom";
-
+// Base url to get the images
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
+/* 
+  Component that display each ROW of films/series
+*/
 function Row({ title, fetchUrl }) {
   const [movies, setMovies] = useState([]);
   const [{}, dispatch] = useStateValue();
@@ -16,8 +19,10 @@ function Row({ title, fetchUrl }) {
       setMovies(request.data.results);
       return request;
     }
+    // each time that fetchUrl changes, useEffect will be executed
     fetchData();
   }, [fetchUrl]);
+
   // Control the click event when select a film
   const handleClick = (e) => {
     const movieSelected = movies.filter((film) => {

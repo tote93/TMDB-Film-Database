@@ -23,13 +23,13 @@ function VideoPlayer({ cssClassName, poster, playVideo }) {
   useEffect(() => {
     if (playVideo) {
       var manifestUri =
-        "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+        "https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8";
 
       //Getting reference to video and video container on DOM
       const video = videoComponent.current;
       const currentVideoContainer = videoContainer.current;
 
-      //Initialize shaka player
+      //Initialize shaka player and set the url features to HLS
       var player = new shaka.Player(video);
       shaka.media.ManifestParser.registerParserByExtension(
         "m3u8",

@@ -1,5 +1,8 @@
 import React from "react";
 import "./styles/Banner.css";
+/*
+  Banner of the website, where you can custom the title
+*/
 function Banner({ appTitle }) {
   return (
     <header className="banner">
