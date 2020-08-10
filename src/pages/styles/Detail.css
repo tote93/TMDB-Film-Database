@@ -3,7 +3,7 @@
   margin-left: 5vh;
   color: #fff;
   object-fit: contain;
-  height: 11.25rem;
+
   margin-left: 1.875rem;
   padding-top: 90px;
 }
@@ -51,7 +51,7 @@
 .detail__imagePoster {
   width: 100%;
   height: auto;
-  max-width: 325px;
+  max-width: 225px;
   border-radius: 10px;
   -webkit-box-reflect: below 1px
     linear-gradient(transparent, transparent, #0004);

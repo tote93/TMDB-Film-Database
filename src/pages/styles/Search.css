@@ -1,8 +1,7 @@
 .search {
   color: #fff;
   object-fit: contain;
-  height: 11.25rem;
-  margin-left: 1.875rem;
+  margin-left: 0.875rem;
   padding-top: 90px;
   display: flex;
   flex-direction: column;
@@ -22,15 +21,16 @@
   flex-wrap: wrap;
 }
 .search__input {
-  width: 70%;
+  width: 80%;
   padding: 10px;
   border-radius: 4px;
   outline: none;
   border: none;
   border-bottom: 1px solid #fff;
   background: #111;
-  font-size: 1.5rem;
+  font-size: clamp(1em, 1.2rem, 1.2rem);
   color: #fff;
+  margin-bottom: 10px;
 }
 .search__btn {
   padding: 7px 15px 7px 15px;
@@ -58,5 +58,5 @@
 .search__results {
   font-weight: 600;
   font-size: 1.8rem;
-  padding: 25px;
+  padding: 5px;
 }

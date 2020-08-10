@@ -22,23 +22,29 @@ function VideoPlayer({ cssClassName, poster, playVideo }) {
   };
   useEffect(() => {
     if (playVideo) {
-      //Link to MPEG-DASH video
       var manifestUri =
-        "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+        "https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8";
 
       //Getting reference to video and video container on DOM
       const video = videoComponent.current;
       const currentVideoContainer = videoContainer.current;
 
-      //Initialize shaka player
+      //Initialize shaka player and set the url features to HLS
       var player = new shaka.Player(video);
-
+      shaka.media.ManifestParser.registerParserByExtension(
+        "m3u8",
+        shaka.hls.HlsParser
+      );
+      shaka.media.ManifestParser.registerParserByMime(
+        "application/x-mpegURL",
+        shaka.hls.HlsParser
+      );
       //Setting UI configuration JSON object
       const uiConfig = {};
 
+      uiConfig["addBigPlayButton"] = true; // barra de progreso
       //Configuring elements to be displayed on video player control panel
-      uiConfig["controlPanelElements"] = ["volume", "fullscreen"];
-
+      uiConfig["controlPanelElements"] = ["mute", "fullscreen", "close"];
       //Setting up shaka player UI
       const ui = new shaka.ui.Overlay(player, currentVideoContainer, video);
 
@@ -74,6 +80,7 @@ function VideoPlayer({ cssClassName, poster, playVideo }) {
       <video
         className="shaka-video"
         autoPlay
+        width="225px"
         ref={videoComponent}
         poster={poster}
       />

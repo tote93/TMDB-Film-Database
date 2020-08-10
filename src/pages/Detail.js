@@ -3,7 +3,7 @@ import { useStateValue } from "../StateProvider";
 import "./styles/Detail.css";
 import DetailError from "./DetailError";
 import DetailSucess from "./DetailSucess";
-
+/* Detail Page when its controlled the view of the details film */
 function Detail() {
   const [{ movieSelected }] = useStateValue();
   const isEmpty = Object.keys(movieSelected).length;
