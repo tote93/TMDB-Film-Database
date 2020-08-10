@@ -7,22 +7,26 @@ For this purpose you have to use The Movie Data Base API.
 # DEMO TEST
 
 It is possible to see a running demo test in the next link:
-https://joseluis-tmdb-24i.web.app
+https://joseluis-tmdb-24i.web.app/
 
 # Features
 
-- [x] Allow search pressing Enter
-- [x] Dont allow special characters in input search
-- [x] Folder scaffolding
-- [x] Splitted into components and pages
-- [x] Axios used as HTTP client to manage promises
-- [x] Checked responsivity in many devices
-- [x] Manage errors during promises and detail page
+- [x] Allow search pressing Enter key and clickSearch.
+- [x] Dont allow special characters in input search.
+- [x] Folder scafolding.
+- [x] Splitted into components and pages.
+- [x] Axios used as HTTP client to manage promises.
+- [x] Checked responsivity in many devices.
+- [x] Manage errors during promises and detail page.
+- [x] Commented the code, and documentation with readme.
+- [x] Video interface has been changed to display only important buttons.
+- [x] The webApp has been deployed in the previous url to make it easier to see the results.
+- [x] Have been tested in different resolutions, also using Chrome, and Safari (both mobile and desktop).
 
 # Things to check
 
 - [x] The hls video is played with no problems in safari/mozilla web-browsers
-- [ ] In Chrome there is a problem with CORSS
+- [-] In Chrome there is a problem with CORSS
 
 # Steps to do
 
@@ -33,10 +37,10 @@ https://joseluis-tmdb-24i.web.app
 - [x] Build the detail page (45 mins)
 - [x] Investigate how Shaka Video Player works, and tests (around 3 hours)
 - [x] Set the trailer video player (30 - 45 mins)
-- [ ] Optional Tasks:
+- [x] Optional Tasks:
   - [x] Make the app responsive
   - [x] Implement Search Funcionality
-  - [ ] Create at least one unit test
+  - [x] Create at least one unit test
 
 # General information
 
