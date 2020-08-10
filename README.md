@@ -9,6 +9,10 @@ For this purpose you have to use The Movie Data Base API.
 It is possible to see a running demo test in the next link:
 https://joseluis-tmdb-24i.web.app/
 
+# DEMO
+
+![](demo.gif)
+
 # Features
 
 - [x] Allow search pressing Enter key and clickSearch.
