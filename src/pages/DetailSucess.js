@@ -43,7 +43,11 @@ function DetailSucess() {
         <div className="detail__poster">
           <VideoPlayer
             playVideo={playVideo}
-            poster={`${baseUrl}${movieSelected?.poster_path}`}
+            poster={
+              movieSelected.poster_path
+                ? `${baseUrl}${movieSelected?.poster_path}`
+                : "https://m.gardensbythebay.com.sg/etc/designs/gbb/clientlibs/images/common/not_found.jpg"
+            }
             cssClassName="detail__imagePoster"
           />
         </div>
