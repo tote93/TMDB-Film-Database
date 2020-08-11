@@ -19,9 +19,8 @@ function Row({ title, fetchUrl }) {
       setMovies(request.data.results);
       return request;
     }
-    // each time that fetchUrl changes, useEffect will be executed
     fetchData();
-  }, [fetchUrl]);
+  }, []);
 
   // Control the click event when select a film
   const handleClick = (e) => {
@@ -42,12 +41,17 @@ function Row({ title, fetchUrl }) {
       <h2 className="row__title">{title}</h2>
       <div className="row__posters">
         {movies.map((movie, i) => {
+          console.log(movie);
           return (
             <Link key={movie.id} to="/detail">
               <img
                 onClick={handleClick}
                 className="row__film"
-                src={`${baseUrl}${movie?.poster_path}`}
+                src={
+                  movie?.poster_path
+                    ? `${baseUrl}${movie?.poster_path}`
+                    : "https://m.gardensbythebay.com.sg/etc/designs/gbb/clientlibs/images/common/not_found.jpg"
+                }
                 alt={movie?.name || movie?.title || movie?.original_title}
               />
             </Link>
