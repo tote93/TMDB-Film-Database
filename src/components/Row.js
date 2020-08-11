@@ -52,6 +52,7 @@ function Row({ title, fetchUrl }) {
                     : "https://m.gardensbythebay.com.sg/etc/designs/gbb/clientlibs/images/common/not_found.jpg"
                 }
                 alt={movie?.name || movie?.title || movie?.original_title}
+                title={movie?.name || movie?.title || movie?.original_title}
               />
             </Link>
           );
