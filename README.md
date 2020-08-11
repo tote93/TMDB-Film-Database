@@ -15,6 +15,7 @@ https://joseluis-tmdb-24i.web.app/
 
 # Features
 
+- [x] It is possible to navigate between films/series pressing shift+mousewhell or using trackpad.
 - [x] Allow search pressing Enter key and clickSearch.
 - [x] Dont allow special characters in input search.
 - [x] Folder scafolding.

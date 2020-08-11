@@ -41,7 +41,6 @@ function Row({ title, fetchUrl }) {
       <h2 className="row__title">{title}</h2>
       <div className="row__posters">
         {movies.map((movie, i) => {
-          console.log(movie);
           return (
             <Link key={movie.id} to="/detail">
               <img
