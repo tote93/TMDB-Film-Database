@@ -16,7 +16,10 @@ function Search() {
   const handleKeyPress = (e) => {
     if (e.key === "Enter" && querySearch) setSearchStatus(true);
   };
-
+  const handleChange = (e) => {
+    setQuerySearch(e.target.value.replace(/[^\w\s]/gi, ""));
+    if (searchStatus) setSearchStatus(false);
+  };
   return (
     <div className="search">
       <div className="search__controls">
@@ -28,9 +31,7 @@ function Search() {
             type="text"
             required
             value={querySearch}
-            onChange={(e) =>
-              setQuerySearch(e.target.value.replace(/[^\w\s]/gi, ""))
-            }
+            onChange={handleChange}
             className="search__input"
             onKeyPress={handleKeyPress}
           />
