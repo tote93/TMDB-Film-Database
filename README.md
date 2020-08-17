@@ -1,4 +1,4 @@
-# 24i React Assignment
+# TMDB Films Database
 
 Create a web application for browsing the popular movies, display a short detail page of a selected movie and play a short movie trailer.
 Please, also make sure to log the hours spent on creating the project and report them back to us together with your results.
