@@ -8,12 +8,12 @@ function ListDetail({ movie }) {
     <ul className="detail__list">
       <ListDetailElement
         content="Adult Content:"
-        feature={movie?.adult ? "Yes" : "No"}
+        feature={movie.adult ? "Yes" : "No"}
       />
-      <ListDetailElement content="Vote Count:" feature={movie?.vote_count} />
+      <ListDetailElement content="Vote Count:" feature={movie.vote_count} />
       <ListDetailElement
         content="Vote Average:"
-        feature={movie?.vote_average}
+        feature={movie.vote_average}
       />
     </ul>
   );

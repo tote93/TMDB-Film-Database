@@ -1,5 +1,5 @@
 import React from "react";
-import EnzymeAdapter, { shallow, mount } from "enzyme";
+import EnzymeAdapter, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Banner from "../components/Banner";
 EnzymeAdapter.configure({ adapter: new Adapter() });

@@ -20,6 +20,7 @@ function VideoPlayer({ cssClassName, poster, playVideo }) {
     // Log the error.
     console.error("Error code", error.code, "object", error);
   };
+
   useEffect(() => {
     if (playVideo) {
       var manifestUri =
@@ -73,6 +74,7 @@ function VideoPlayer({ cssClassName, poster, playVideo }) {
         })
         .catch(onError); // onError is executed if the asynchronous load fails.
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playVideo]);
 
   return (

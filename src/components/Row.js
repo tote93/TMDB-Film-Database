@@ -6,13 +6,14 @@ import { Link } from "react-router-dom";
 // Base url to get the images
 const baseUrl = "https://image.tmdb.org/t/p/original/";
 
-/* 
+/*
   Component that display each ROW of films/series
 */
 function Row({ title, fetchUrl }) {
   const [movies, setMovies] = useState([]);
-  const [{}, dispatch] = useStateValue();
-  // Use useEffect hook to get an async promise from axios
+
+  const [{ }, dispatch] = useStateValue();  //eslint-disable-line no-empty-pattern
+
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(fetchUrl);
@@ -20,19 +21,16 @@ function Row({ title, fetchUrl }) {
       return request;
     }
     fetchData();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Control the click event when select a film
-  const handleClick = (e) => {
-    const movieSelected = movies.filter((film) => {
-      return (
-        (film?.name || film?.title || film?.original_title) === e.target.alt
-      );
-    });
+  const handleClick = (movie) => {
+    const movieSelected = movies.find((film) => film.title === movie.title);
+
     // Dispatch the event to the global state
     dispatch({
       type: "SET__DETAIL_MOVIE",
-      movie: movieSelected[0],
+      movie: movieSelected,
     });
   };
 
@@ -44,15 +42,15 @@ function Row({ title, fetchUrl }) {
           return (
             <Link key={movie.id} to="/detail">
               <img
-                onClick={handleClick}
+                onClick={() => handleClick(movie)}
                 className="row__film"
                 src={
                   movie?.poster_path
-                    ? `${baseUrl}${movie?.poster_path}`
+                    ? `${baseUrl}${movie.poster_path}`
                     : "https://m.gardensbythebay.com.sg/etc/designs/gbb/clientlibs/images/common/not_found.jpg"
                 }
-                alt={movie?.name || movie?.title || movie?.original_title}
-                title={movie?.name || movie?.title || movie?.original_title}
+                alt={movie.name || movie.title || movie.original_title}
+                title={movie.name || movie.title || movie.original_title}
               />
             </Link>
           );

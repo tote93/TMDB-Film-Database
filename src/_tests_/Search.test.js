@@ -1,5 +1,5 @@
 import React from "react";
-import EnzymeAdapter, { shallow, mount } from "enzyme";
+import EnzymeAdapter, { shallow } from "enzyme";
 import Search from "../pages/Search";
 import Adapter from "enzyme-adapter-react-16";
 import Row from "../components/Row";
