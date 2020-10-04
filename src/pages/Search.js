@@ -17,7 +17,7 @@ function Search() {
     if (e.key === "Enter" && querySearch) setSearchStatus(true);
   };
   const handleChange = (e) => {
-    setQuerySearch(e.target.value.replace(/[^\w\s]/gi, ""));
+    setQuerySearch(e.target.value);
     if (searchStatus) setSearchStatus(false);
   };
   return (

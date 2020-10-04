@@ -1,5 +1,5 @@
 import React from "react";
-/* 
+/*
   Component to divide the list element from the list
 */
 function ListDetailElement({ content, feature }) {
